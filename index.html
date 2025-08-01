@@ -1,79 +1,67 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>منصة أبو ليث لتفسير الأحلام والرؤى</title>
-  <link rel="stylesheet" href="style.css">
-</head><body>
-  <header class="main-header">
-    <h1>منصة أبو ليث لتفسير الأحلام والرؤى</h1>
-    <p>رؤياك تهمنا وتفسيرها أمانة</p>
-  </header>  <section class="about-section">
-    <h2><img src="images/islamic-icon.png" class="icon"> التفسير الشرعي للأحلام</h2>
-    <p>
-      نقدم لك تفسيرًا شرعيًا موثوقًا يستند إلى القرآن الكريم والسنة النبوية، مع الأخذ بعين الاعتبار الرموز والمعاني الدقيقة لكل رؤيا.
-    </p>
-  </section>  <section class="services-section">
-    <h2><img src="images/islamic-icon.png" class="icon"> خدماتنا</h2>
-    <ul>
-      <li>تفسير الرؤيا الواحدة مقابل 30 ريال سعودي</li>
-      <li>اشتراك شهري يشمل عدد غير محدود من الرؤى مقابل 100 ريال سعودي</li>
-      <li>تفسير مجاني عند نشر حساب تويتر الخاص بنا على صفحات التواصل الاجتماعي</li>
-      <li>الرد السريع خلال 24 ساعة</li>
-      <li>خدمة خصوصية تامة</li>
-    </ul>
-  </section>  <section class="form-section">
-    <div class="form-icons">
-      <img src="images/quran.png" class="form-icon">
-      <img src="images/moon.png" class="form-icon">
-    </div>
-    <h2><img src="images/islamic-icon.png" class="icon"> نموذج طلب التفسير</h2>
-    <form action="mailto:abolith966@gmail.com" method="POST" enctype="text/plain">
-      <textarea name="رؤياك" rows="6" placeholder="اكتب رؤياك هنا بالتفصيل" required></textarea><label>
-    اختر الخدمة:
-    <select name="نوع الخدمة">
-      <option value="رؤيا بـ30 ريال">رؤيا بـ30 ريال</option>
-      <option value="اشتراك شهري بـ100 ريال">اشتراك شهري بـ100 ريال</option>
-      <option value="رؤيا مجانية بشرط النشر">رؤيا مجانية بشرط النشر</option>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">منصة <span>أبو ليث</span></div>
+    <nav>
+      <ul>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#form">نموذج التفسير</a></li>
+        <li><a href="#testimonials">آراء الجمهور</a></li>
+      </ul>
+    </nav>
+  </header>  <main>
+    <section class="intro">
+      <h1><img src="images/icon-islamic.png" class="icon" />منصة أبو ليث لتفسير الأحلام والرؤى</h1>
+      <p>نقدّم تفسيرات شرعية موثوقة مستندة إلى القرآن والسنة، بأسلوب بسيط وواضح يفهمه الجميع.</p>
+    </section><section id="services" class="services">
+  <h2><img src="images/icon-islamic.png" class="icon" />خدماتنا</h2>
+  <ul>
+    <li>تفسير رؤيا واحدة فقط بـ 30 ريال.</li>
+    <li>اشتراك شهري يشمل عدد غير محدود بـ 100 ريال.</li>
+    <li>تفسير مجاني عند نشر حساب تويتر في مواقع التواصل.</li>
+    <li>خدمة الرد السريع خلال ساعات قليلة.</li>
+    <li>تقديم التفسير كتابيًا وبصوتي عند الطلب.</li>
+  </ul>
+</section>
+
+<section id="form" class="form-section">
+  <img src="images/quran-icon.png" class="quran" />
+  <img src="images/moon-icon.png" class="moon" />
+  <h2>نموذج إرسال الرؤيا</h2>
+  <form action="https://formspree.io/f/moqgqgdp" method="POST">
+    <textarea name="ro'ya" placeholder="اكتب رؤياك هنا..." required></textarea>
+    <select name="type">
+      <option value="30">تفسير بـ30 ريال</option>
+      <option value="100">اشتراك شهري بـ100 ريال</option>
+      <option value="free">تفسير مجاني مقابل النشر</option>
     </select>
-  </label>
+    <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
+    <textarea name="notes" placeholder="ملاحظات إضافية"></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+</section>
 
-  <input type="email" name="البريد الإلكتروني" placeholder="أدخل بريدك الإلكتروني" required>
-  <textarea name="ملاحظات إضافية" rows="3" placeholder="أي ملاحظات إضافية؟"></textarea>
-  <button type="submit">إرسال الطلب</button>
-</form>
+<section id="testimonials" class="testimonials">
+  <h2><img src="images/icon-islamic.png" class="icon" />آراء الجمهور</h2>
+  <div class="testimonial-bubbles">
+    <div class="bubble"><img src="images/user1.png" /> "جزاك الله خير على التفسير الواضح." <span>- أحمد</span></div>
+    <div class="bubble"><img src="images/user2.png" /> "كان ردك سريع ومقنع، شكرًا." <span>- فاطمة</span></div>
+    <div class="bubble"><img src="images/user3.png" /> "أول مرة أفهم حلمي بهذه الطريقة." <span>- خالد</span></div>
+    <div class="bubble"><img src="images/user4.png" /> "أنصح الجميع بالتعامل مع الشيخ أبو ليث." <span>- سارة</span></div>
+    <div class="bubble"><img src="images/user5.png" /> "تفسير شرعي واضح ودقيق، بارك الله فيك." <span>- يوسف</span></div>
+  </div>
+</section>
 
-  </section>  <section class="testimonials-section">
-    <h2><img src="images/islamic-icon.png" class="icon"> آراء الجمهور</h2>
-    <div class="testimonials-container">
-      <div class="testimonial">
-        <img src="images/user1.png" alt="صورة مستخدم">
-        <p>فسّر لي الشيخ أبو ليث رؤيا كانت تؤرقني وأراح قلبي.</p>
-        <span>أم محمد</span>
-      </div>
-      <div class="testimonial">
-        <img src="images/user2.png" alt="صورة مستخدم">
-        <p>خدمة سريعة وتفسير دقيق جزاكم الله خيراً.</p>
-        <span>عبدالرحمن</span>
-      </div>
-      <div class="testimonial">
-        <img src="images/user3.png" alt="صورة مستخدم">
-        <p>منصة موثوقة وتعامل راقٍ.</p>
-        <span>أبو خالد</span>
-      </div>
-      <div class="testimonial">
-        <img src="images/user4.png" alt="صورة مستخدم">
-        <p>أعتمد على الشيخ أبو ليث في كل رؤاي.</p>
-        <span>نورة</span>
-      </div>
-      <div class="testimonial">
-        <img src="images/user5.png" alt="صورة مستخدم">
-        <p>التفسير دقيق ومطابق لما حصل معي فعلاً!</p>
-        <span>محمد</span>
-      </div>
-    </div>
-  </section>  <footer class="main-footer">
-    <p>للتواصل عبر الهاتف: <strong>+966507286134</strong></p>
-    <p>تابعنا على تويتر: <a href="https://x.com/AboLith1152379" target="_blank">@AboLith1152379</a></p>
-    <p>#أبو_ليث_مفسر_الأحلام_والرؤى</p>
-  </footer>
-</body></html>
+  </main>  <footer>
+    <p>© 2025 منصة أبو ليث لتفسير الأحلام والرؤى</p>
+    <p>للتواصل: <a href="tel:+966507286134">+966507286134</a> | <a href="mailto:abolith966@gmail.com">abolith966@gmail.com</a></p>
+    <p><a href="https://x.com/AboLith1152379">تابعنا على تويتر</a></p>
+  </footer>  <script src="script.js"></script></body>
+</html>
