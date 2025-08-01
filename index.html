@@ -1,60 +1,149 @@
 <!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>منصة أبو ليث لتفسير الأحلام والرؤى</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f7f3;
+      color: #3b2f23;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d2b48c;
+      color: #5a3e1b;
+      padding: 2em;
+      text-align: center;
+    }
+    nav {
+      background-color: #f1e5d1;
+      text-align: center;
+      padding: 1em;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #5a3e1b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      background-color: #d2b48c;
+      color: #5a3e1b;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .bubble {
+      background-color: #fffaf3;
+      border: 1px solid #d4b28b;
+      border-radius: 20px;
+      padding: 1em;
+      margin: 1em 0;
+      animation: float 5s infinite ease-in-out;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .services {
+      background-color: #fbf6ef;
+      border-radius: 10px;
+      padding: 1em;
+      margin-top: 2em;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      padding: 0.5em 0;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>منصة أبو ليث لتفسير الأحلام والرؤى</h1>
-    <p>تفسير شرعي موثوق وفق منهج أهل السنة والجماعة</p>
-  </header>  <section class="intro">
-    <p>✨ يمكنك إرسال رؤياك الآن لتفسيرها خلال وقت قصير عبر نموذج سهل وسريع.</p>
+    <p>متخصص في تعبير الرؤى وفق المنهج الشرعي لأهل السنة والجماعة</p>
+  </header>
+  <nav>
+    <a href="#about">عن التفسير</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#form">نموذج التفسير</a>
+    <a href="#feedback">آراء الجمهور</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>  <section id="about">
+    <h2>عن التفسير الشرعي</h2>
+    <p>تفسير الأحلام علم شريف، يتطلب فقهًا في الدين، ومعرفةً بالرموز، ونيةً خالصة لوجه الله تعالى. يتم تفسير الرؤى من خلال مقارنة الرموز الشرعية، والنظر في حال الرائي، دون التكلف أو الغيب. وقد كان النبي ﷺ يعرض الرؤى على الصحابة، ويُفسّرها بما علمه الله.</p>
+  </section>  <section id="services" class="services">
+    <h2>خدماتنا</h2>
     <ul>
-      <li>🔹 <strong>رؤيا واحدة:</strong> 30 ريال سعودي</li>
-      <li>🔹 <strong>اشتراك شهري:</strong> 100 ريال سعودي</li>
-      <li>🔹 <strong>رؤيا مجانية</strong> بشرط نشر حساب تويتر الخاص بنا في حسابك.</li>
+      <li>تفسير رؤيا مفردة برسوم رمزية (30 ريال سعودي)</li>
+      <li>اشتراك شهري لتفسير عدد غير محدود من الرؤى (100 ريال سعودي)</li>
+      <li>تفسير رؤيا مجانًا مقابل نشر حساب تويتر الخاص بنا</li>
+      <li>إرسال تقارير مفصلة عن الرموز والشرح الشرعي</li>
+      <li>خدمة الرد السريع خلال 24 ساعة</li>
     </ul>
-  </section>  <section class="form-section">
+  </section>  <section id="form">
     <h2>نموذج إرسال الرؤيا</h2>
-    <form action="mailto:abolith966@gmail.com" method="POST" enctype="text/plain">
-      <label>نص الرؤيا:</label>
-      <textarea name="r" required></textarea><label>اختر نوع الخدمة:</label>
-  <select name="الخدمة">
-    <option value="رؤيا بـ30 ريال">رؤيا بـ30 ريال</option>
-    <option value="اشتراك بـ100 ريال">اشتراك شهري بـ100 ريال</option>
-    <option value="مجانية مقابل نشر تويتر">رؤيا مجانية بشرط نشر حساب تويتر</option>
-  </select>
-
-  <label>البريد الإلكتروني للرد:</label>
-  <input type="email" name="email" required />
-
-  <label>ملاحظات إضافية (اختياري):</label>
-  <textarea name="ملاحظات"></textarea>
-
-  <button type="submit">إرسال الرؤيا</button>
-</form>
-
-  </section>  <section class="shar3i">
-    <h2>📖 التفسير الشرعي للرؤى</h2>
-    <p>
-      تفسير الأحلام علم شرعي يستند إلى القرآن الكريم والسنة النبوية، ويقوم على قواعد ثابتة وفهم سليم لمعاني الرموز. ومنهجنا هو منهج أهل السنة والجماعة، مع مراعاة حال الرائي وظروفه.
-      قال يوسف عليه السلام: <q>ذَٰلِكُمَا مِمَّا عَلَّمَنِي رَبِّي</q>، فلا يجوز العبث بالتأويل ولا تقديم الظن على العلم.
-    </p>
-  </section>  <section class="messages">
-    <h2>💬 آراء وثناء الجمهور</h2>
-    <div class="msg">🟩 "السلام عليكم يا شيخ، فعلاً التفسير كان دقيقًا جدًا وتحقق ما قلت لي بالحرف. جزاك الله خيرًا."</div>
-    <div class="msg">🟩 "اليوم حصلت على نفس الوظيفة التي فسّرتها لي، سبحان الله، جزاك الله خيرًا."</div>
-    <div class="msg">🟩 "طمأنتني بعد ما فسرتها، حسيت براحة والله."</div>
-    <div class="msg">🟩 "تفسيرك عميق ودقيق. ما شاء الله، استمر."</div>
-    <div class="msg">🟩 "أول مرة أرسل لك رؤيا، لكن أكيد مش الأخيرة إن شاء الله."</div>
+    <form action="mailto:abolith966@gmail.com" method="post" enctype="text/plain">
+      <label>العمر:</label><br>
+      <input type="number" name="age"><br><br>
+      <label>الحالة النفسية والاجتماعية:</label><br>
+      <input type="text" name="state"><br><br>
+      <label>نص الرؤيا:</label><br>
+      <textarea name="dream" rows="6" cols="50"></textarea><br><br>
+      <label>البريد الإلكتروني:</label><br>
+      <input type="email" name="email"><br><br>
+      <p>اختر نوع الخدمة:</p>
+      <input type="radio" name="type" value="30 ريال سعودي"> تفسير رؤيا واحدة<br>
+      <input type="radio" name="type" value="100 ريال سعودي"> اشتراك شهري<br>
+      <input type="radio" name="type" value="مجاني مقابل نشر تويتر"> تفسير مجاني مقابل نشر الحساب<br><br>
+      <button type="submit">أرسل الرؤيا</button>
+    </form>
+  </section>  <section id="feedback">
+    <h2>آراء الجمهور</h2>
+    <div class="bubble">
+      <strong>أم محمد</strong><br>
+      <img src="https://via.placeholder.com/50" alt="صورة">
+      <p>جزاكم الله خيرًا على التفسير الدقيق، ارتحت كثيرًا بعد معرفته.</p>
+    </div>
+    <div class="bubble">
+      <strong>عبدالله العتيبي</strong><br>
+      <img src="https://via.placeholder.com/50" alt="صورة">
+      <p>تفسير سريع ومميز، بارك الله في علمكم.</p>
+    </div>
+    <div class="bubble">
+      <strong>نورة</strong><br>
+      <img src="https://via.placeholder.com/50" alt="صورة">
+      <p>من أصدق التفسيرات التي مرت عليّ، شكرًا من القلب.</p>
+    </div>
+    <div class="bubble">
+      <strong>سعد الشهراني</strong><br>
+      <img src="https://via.placeholder.com/50" alt="صورة">
+      <p>الرموز كانت دقيقة والتفسير واضح جدًا.</p>
+    </div>
+    <div class="bubble">
+      <strong>أبو فيصل</strong><br>
+      <img src="https://via.placeholder.com/50" alt="صورة">
+      <p>تعامل راقٍ ومعلومات شرعية موثوقة.</p>
+    </div>
+  </section>  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>📞 الهاتف: +966507286134</p>
+    <p>📧 البريد الإلكتروني: abolith966@gmail.com</p>
+    <p>🐦 تويتر: <a href="https://x.com/AboLith1152379" target="_blank">@AboLith1152379</a></p>
   </section>  <footer>
-    <p>📞 للتواصل: <a href="tel:+966507286134">966507286134+</a></p>
-    <p>📌 تابعنا على تويتر: <a href="https://x.com/AboLith1152379" target="_blank">@AboLith1152379</a></p>
+    &copy; 2025 منصة أبو ليث لتفسير الأحلام والرؤى. جميع الحقوق محفوظة.
   </footer>
 </body>
 </html>
