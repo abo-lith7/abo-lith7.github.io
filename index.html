@@ -1,47 +1,34 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>منصة أبو ليث لتفسير الرؤى</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <section class="form-section">
-    <h1>منصة أبو ليث لتفسير الأحلام والرؤى</h1>
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نموذج تفسير الرؤى</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head><body>
+  <div class="form-container">
+    <h2><i class="fas fa-star"></i> نموذج طلب تفسير رؤيا <i class="fas fa-moon"></i></h2>
+    <form action="https://formspree.io/f/xjvndzgo" method="POST"><label for="dream"><i class="fas fa-feather-alt"></i> اكتب الرؤيا بالتفصيل:</label>
+  <textarea id="dream" name="الرؤيا" rows="6" required></textarea>
 
-    <p class="description">
-      نُقدّم تفسيرًا شرعيًا موثوقًا للأحلام والرؤى، وفق منهج أهل السنة والجماعة.  
-      <ul>
-        <li>🔹 رؤيا واحدة: <strong>30 ريال سعودي</strong></li>
-        <li>🔸 اشتراك شهري: <strong>100 ريال سعودي</strong></li>
-        <li>🔹 رؤيا مجانية بشرط نشر حساب تويتر الخاص بنا</li>
-      </ul>
-      يتم الرد خلال <strong>24 ساعة</strong>.  
-      للتواصل: <strong>+966507286134</strong>  
-      | <a href="https://x.com/AboLith1152379" target="_blank">@AboLith1152379</a>
-    </p>
+  <label><i class="fas fa-list"></i> الخدمة المطلوبة:</label>
+  <div class="options">
+    <label><input type="checkbox" name="الخدمة" value="رؤيا واحدة بـ 30 ريال سعودي"> رؤيا واحدة بـ 30 ريال سعودي</label>
+    <label><input type="checkbox" name="الخدمة" value="اشتراك شهري بـ 100 ريال سعودي"> اشتراك شهري بـ 100 ريال سعودي</label>
+    <label><input type="checkbox" name="الخدمة" value="رؤيا مجانية بشرط نشر حساب تويتر"> رؤيا مجانية بشرط نشر حساب تويتر</label>
+  </div>
 
-    <!-- نموذج الإرسال إلى البريد -->
-    <form action="https://formsubmit.co/abolith966@gmail.com" method="POST">
-      <textarea name="الرؤيا" placeholder="اكتب الرؤيا هنا بالتفصيل" required></textarea>
+  <label for="notes"><i class="fas fa-comment-dots"></i> ملاحظات أخرى (اختياري):</label>
+  <textarea id="notes" name="ملاحظات" rows="2"></textarea>
 
-      <label>الخدمة المطلوبة:</label>
-      <div class="options">
-        <label><input type="checkbox" name="الخدمة" value="رؤيا واحدة بـ30 ريال" /> رؤيا واحدة بـ 30 ريال سعودي</label>
-        <label><input type="checkbox" name="الخدمة" value="اشتراك شهري بـ100 ريال" /> اشتراك شهري بـ 100 ريال</label>
-        <label><input type="checkbox" name="الخدمة" value="رؤيا مجانية بشرط النشر" /> رؤيا مجانية بشرط نشر حساب تويتر</label>
-      </div>
+  <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني:</label>
+  <input type="email" id="email" name="البريد الإلكتروني" required>
 
-      <textarea name="ملاحظات إضافية" placeholder="ملاحظات أخرى (اختياري)"></textarea>
-      <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني" required />
+  <input type="hidden" name="to" value="abolith966@gmail.com">
 
-      <!-- حقل إخفاء لمنع السبام -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://abu-laith.github.io/thanks.html">
+  <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
+</form>
 
-      <button type="submit">إرسال</button>
-    </form>
-  </section>
-</body>
-</html>
+  </div>
+</body></html>
