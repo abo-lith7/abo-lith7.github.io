@@ -1,38 +1,75 @@
 body {
   font-family: 'Arial', sans-serif;
-  direction: rtl;
-  background: #f9f9f9;
-  color: #222;
+  background-color: #f4f4f4;
+  color: #2f2f2f;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #0d3b66;
-  color: white;
-  padding: 2rem;
+  background-color: #333;
+  color: gold;
+  padding: 1em;
   text-align: center;
 }
 
-main {
-  padding: 2rem;
+nav {
+  text-align: center;
+  padding: 1em;
+  background-color: #ddd;
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 section {
-  margin-bottom: 2rem;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
-  color: #0d3b66;
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 footer {
-  background: #eee;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 1em;
+  background-color: #333;
+  color: gold;
+  margin-top: 2em;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.en {
+  display: none;
+}
+
+button {
+  background-color: gold;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.7em;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
