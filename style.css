@@ -68,7 +68,14 @@ button {
   width: 60px;
   opacity: 0.8;
 }
-
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .testimonials {
   position: relative;
   overflow: hidden;
@@ -99,10 +106,6 @@ button {
   border-radius: 50%;
 }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
 
 .decorative-sides::before,
 .decorative-sides::after {
