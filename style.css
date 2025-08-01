@@ -1,75 +1,58 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #2f2f2f;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: gold;
-  padding: 1em;
-  text-align: center;
-}
-
-nav {
-  text-align: center;
-  padding: 1em;
-  background-color: #ddd;
-}
-
-nav a {
-  margin: 0 1em;
-  text-decoration: none;
+  font-family: 'Tahoma', sans-serif;
+  background-color: #f8f8f8;
   color: #333;
-  font-weight: bold;
+  direction: rtl;
+  padding: 20px;
 }
 
-section {
-  padding: 2em;
-  max-width: 800px;
+.form-section {
+  background-color: #fff;
+  max-width: 600px;
   margin: auto;
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 1em;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #333;
-  color: gold;
-  margin-top: 2em;
+.form-section h1 {
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.lang-toggle {
-  position: absolute;
-  top: 1em;
-  left: 1em;
+.description {
+  background: #f4f4f4;
+  padding: 15px;
+  border-right: 4px solid goldenrod;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
-.en {
-  display: none;
+.description a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+textarea, input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.options label {
+  display: block;
+  margin: 5px 0;
 }
 
 button {
-  background-color: gold;
-  color: #000;
+  background-color: goldenrod;
+  color: white;
   border: none;
-  padding: 10px 20px;
-  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
   cursor: pointer;
-  border-radius: 5px;
-}
-
-input, textarea, select {
-  width: 100%;
-  padding: 0.7em;
-  margin-top: 0.3em;
-  margin-bottom: 1em;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
 }
