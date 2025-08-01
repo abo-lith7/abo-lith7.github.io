@@ -1,158 +1,107 @@
 body {
+  font-family: "Cairo", sans-serif;
+  background: linear-gradient(to bottom, #f8f4ef, #e7dccb);
+  color: #4b3621;
+  padding: 0 1rem;
   margin: 0;
-  font-family: 'Cairo', sans-serif;
-  background-color: #fdf9f2;
-  color: #3b2f25;
-  background-image: url('images/pattern-bg.png');
-  background-size: cover;
-  background-attachment: fixed;
+  direction: rtl;
 }
 
 header {
-  background-color: #a1866f;
-  color: #fff8e7;
-  padding: 2em;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.3em;
+  background: #c5a471;
   color: #fff;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #f0e5d8;
-}
-
-nav {
-  background-color: #e0d2c0;
-  padding: 1em;
+  padding: 2rem;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-nav a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: #5c4531;
-  font-weight: bold;
+h1, h2 {
+  color: #4b3621;
 }
 
 section {
-  max-width: 900px;
-  margin: auto;
-  padding: 2em;
-  background: #ffffffd9;
-  margin-top: 1.5em;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-h2 {
-  color: #7b5b3b;
-  border-bottom: 2px solid #c8a96a;
-  padding-bottom: 0.5em;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-form label {
-  font-weight: bold;
-  color: #5c4531;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea,
-select {
-  width: 100%;
-  padding: 0.7em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  border: 1px solid #d6c1a1;
+ul li {
+  background: #f5e7d0;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-left: 5px solid #a67c52;
   border-radius: 6px;
-  background-color: #fffaf2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea, select, button {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 button {
-  background-color: #b8925c;
-  color: white;
+  background-color: #a67c52;
+  color: #fff;
   border: none;
-  padding: 0.8em 1.5em;
-  border-radius: 6px;
-  font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #9b7745;
+  background-color: #8c6239;
 }
 
 footer {
-  background-color: #a1866f;
-  color: white;
+  background: #c5a471;
+  color: #fff;
+  padding: 1rem;
   text-align: center;
-  padding: 1.5em;
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
-.testimonials {
+.testimonial-bubbles {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .bubble {
-  background-color: #fff6e0;
-  border-left: 5px solid #b8925c;
-  border-radius: 10px;
-  padding: 1em;
-  width: 260px;
-  position: relative;
-  animation: float 6s infinite ease-in-out;
+  background: #f5e7d0;
+  color: #4b3621;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  text-align: center;
 }
 
-.bubble img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  float: right;
-  margin-left: 10px;
+.bubble span {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
-.bubble .name {
-  font-weight: bold;
-  color: #5c4531;
-  margin-bottom: 0.3em;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-/* خدماتنا */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.5em;
-  margin-top: 1em;
-}
-
-.service-card {
-  background: #fffaf2;
-  border: 1px solid #dbc5aa;
-  border-left: 5px solid #b8925c;
-  padding: 1em;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.06);
-}
-
-.service-card h3 {
-  color: #7b5b3b;
-  margin-top: 0;
+.bubble-animate {
+  opacity: 1 !important;
+  transform: scale(1.05);
 }
