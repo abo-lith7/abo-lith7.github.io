@@ -1,107 +1,133 @@
 body {
-  font-family: "Cairo", sans-serif;
-  background: linear-gradient(to bottom, #f8f4ef, #e7dccb);
-  color: #4b3621;
-  padding: 0 1rem;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f5f2ec;
   margin: 0;
+  padding: 0;
+  color: #4b3a2f;
   direction: rtl;
 }
 
-header {
-  background: #c5a471;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
 h1, h2 {
-  color: #4b3621;
+  color: #a67c00;
+  margin: 20px 0 10px;
+  text-align: center;
+  position: relative;
 }
 
-section {
-  margin: 2rem 0;
-  padding: 1rem;
-  background-color: #fff;
+.icon-moon::before, .icon-book::before, .icon-form::before, .icon-users::before {
+  content: "🕌";
+  margin-left: 5px;
+}
+
+.intro, .services, .form-section, .testimonials {
+  padding: 20px;
+  background-color: #fffaf0;
+  margin: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(204, 174, 109, 0.4);
 }
 
-ul {
+.services ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
-  background: #f5e7d0;
-  padding: 0.7rem;
-  margin: 0.5rem 0;
-  border-left: 5px solid #a67c52;
-  border-radius: 6px;
+.services li {
+  background: #eee1c5;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 12px;
 }
 
-input, textarea, select, button {
-  padding: 0.6rem;
+input, textarea, select {
+  padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  font-family: inherit;
 }
 
 button {
-  background-color: #a67c52;
-  color: #fff;
+  background-color: #a67c00;
+  color: white;
+  padding: 10px;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  font-weight: bold;
 }
 
-button:hover {
-  background-color: #8c6239;
+.quran-icon {
+  display: block;
+  margin: 0 auto 10px;
+  width: 60px;
+  opacity: 0.8;
 }
 
-footer {
-  background: #c5a471;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.testimonial-bubbles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.testimonials {
   position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  display: flex;
+  animation: scroll 25s linear infinite;
 }
 
 .bubble {
-  background: #f5e7d0;
-  color: #4b3621;
-  padding: 1rem;
+  min-width: 250px;
+  background: #fff;
+  border: 1px solid #d4b57d;
   border-radius: 20px;
-  margin: 0.5rem;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  opacity: 0;
-  transition: all 1s ease-in-out;
+  margin: 10px;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.bubble img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.decorative-sides::before,
+.decorative-sides::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  background: url('islamic-pattern.png') repeat-y center;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.decorative-sides::before {
+  right: 0;
+}
+
+.decorative-sides::after {
+  left: 0;
+}
+
+footer {
   text-align: center;
-}
-
-.bubble span {
-  display: block;
-  margin-top: 0.5rem;
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-.bubble-animate {
-  opacity: 1 !important;
-  transform: scale(1.05);
+  padding: 20px;
+  background: #eee1c5;
+  color: #5d4a33;
+  font-weight: bold;
 }
