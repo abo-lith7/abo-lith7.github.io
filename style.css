@@ -42,3 +42,7 @@ button:hover { background-color: #8b642f; }
 
 footer { background: #6a4c28; color: #fff; text-align: center; padding: 20px; font-size: 14px; }
 
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
