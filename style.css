@@ -1,159 +1,44 @@
-body {
-  font-family: 'Tajawal', sans-serif;
-  background: #f8f5ec;
-  color: #4e3b2c;
-  margin: 0;
-  padding: 0;
-  direction: rtl;
-}
+/* style.css - تصميم منصة أبو ليث لتفسير الأحلام والرؤى */
 
-header {
-  background-color: #c9b58c;
-  text-align: center;
-  padding: 30px 15px;
-  color: #fff;
-}
+body { font-family: 'Cairo', sans-serif; margin: 0; padding: 0; background: #f9f5f0 url('images/decor.png') no-repeat left top; background-size: contain; color: #3e2d16; }
 
-header h1 {
-  font-size: 2em;
-  color: #3d2e1e;
-}
+header { background-color: #8d6e3f; color: white; padding: 40px 20px 20px; text-align: center; position: relative; }
 
-.header-images {
-  text-align: center;
-  margin-top: 20px;
-}
+header img.quran-icon { position: absolute; top: -20px; left: 30px; width: 80px; opacity: 0.2; }
 
-.quran-img, .moon-img {
-  height: 60px;
-  margin: 0 5px;
-  opacity: 0.6;
-}
+header img.moon-icon { position: absolute; top: -20px; right: 30px; width: 60px; opacity: 0.2; }
 
-section {
-  padding: 30px 20px;
-  border-bottom: 1px solid #ddd;
-}
+section { padding: 40px 20px; text-align: center; }
 
-h2 {
-  font-size: 1.6em;
-  margin-bottom: 15px;
-  color: #6c541e;
-}
+section h2 { font-size: 26px; color: #6e4b1e; position: relative; padding-top: 30px; }
 
-.icon {
-  margin-left: 8px;
-}
+section h2::before { content: url('images/icon-islamic.png'); position: absolute; top: 0; left: 50%; transform: translateX(-50%); height: 30px; }
 
-.services ul {
-  list-style: none;
-  padding: 0;
-}
+form { background: #fff7ec; border: 2px solid #d4aa6f; border-radius: 12px; padding: 30px; max-width: 500px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: relative; }
 
-.services li {
-  margin-bottom: 10px;
-  background: #fff9e6;
-  padding: 10px;
-  border-radius: 8px;
-}
+form img.quran-icon, form img.moon-icon { position: absolute; width: 60px; opacity: 0.15; }
 
-.form-section form {
-  display: flex;
-  flex-direction: column;
-}
+form img.quran-icon { top: -30px; left: -30px; }
 
-form label {
-  margin: 10px 0 5px;
-}
+form img.moon-icon { top: -30px; right: -30px; }
 
-form input, form textarea, form select {
-  padding: 10px;
-  border: 1px solid #a38c64;
-  border-radius: 5px;
-  font-size: 1em;
-  background: #fffefc;
-}
+input, textarea, select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #c9a46c; font-size: 16px; background-color: #fff; }
 
-form button {
-  margin-top: 20px;
-  padding: 12px;
-  background: #a28755;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+button { background-color: #a67c43; color: white; border: none; padding: 12px 20px; font-size: 18px; cursor: pointer; border-radius: 8px; }
 
-form button:hover {
-  background: #7b5e32;
-}
+button:hover { background-color: #8b642f; }
 
-.testimonials .bubbles {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  animation: slide 15s infinite;
-}
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 
-.bubble {
-  background: #fffbe6;
-  border: 1px solid #d4c2a5;
-  border-radius: 20px;
-  padding: 15px;
-  position: relative;
-  animation: float 5s ease-in-out infinite;
-}
+.service-box { background: #fff9f3; border: 1px solid #ddb887; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 
-.bubble img {
-  height: 40px;
-  border-radius: 50%;
-  float: right;
-  margin-left: 10px;
-}
+.testimonials { position: relative; max-width: 600px; margin: 40px auto; height: 150px; overflow: hidden; }
 
-.bubble span {
-  display: block;
-  font-size: 0.9em;
-  color: #7a6650;
-  margin-top: 5px;
-}
+.testimonial { position: absolute; opacity: 0; transition: opacity 1s ease-in-out; text-align: center; padding: 20px; border-radius: 10px; background-color: #fdf7ef; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
-}
+.testimonial.active { opacity: 1; }
 
-.side-decor {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  opacity: 0.1;
-  z-index: -1;
-}
+.testimonial img { width: 50px; border-radius: 50%; margin-bottom: 10px; }
 
-.side-decor.right {
-  right: 0;
-}
+footer { background: #6a4c28; color: #fff; text-align: center; padding: 20px; font-size: 14px; }
 
-.side-decor.left {
-  left: 0;
-}
-
-footer {
-  background: #c4b089;
-  text-align: center;
-  color: #3d2e1e;
-  padding: 20px;
-}
-
-footer a {
-  color: #3d2e1e;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.copy {
-  margin-top: 10px;
-  font-size: 0.9em;
-}
