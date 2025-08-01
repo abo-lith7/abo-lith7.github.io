@@ -1,156 +1,47 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الشيخ أبو ليث | تفسير الأحلام</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      color: #2f2f2f;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: gold;
-      padding: 1em;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      padding: 1em;
-      background-color: #ddd;
-    }
-    nav a {
-      margin: 0 1em;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    section {
-      padding: 2em;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      border-radius: 10px;
-      margin-top: 1em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      background-color: #333;
-      color: gold;
-      margin-top: 2em;
-    }
-    .lang-toggle {
-      position: absolute;
-      top: 1em;
-      left: 1em;
-    }
-    .en {
-      display: none;
-    }
-    button {
-      background-color: gold;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منصة أبو ليث لتفسير الرؤى</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1 id="title-ar">الشيخ أبو ليث</h1>
-    <h1 id="title-en" class="en">Sheikh Abu Laith</h1>
-    <p id="subtitle-ar">مفسر الأحلام والرؤى الشرعية</p>
-    <p id="subtitle-en" class="en">Interpreter of Islamic Dreams and Visions</p>
-  </header>
+  <section class="form-section">
+    <h1>منصة أبو ليث لتفسير الأحلام والرؤى</h1>
 
-  <div class="lang-toggle">
-    <a href="#" onclick="toggleLanguage()">🇬🇧 / 🇸🇦</a>
-  </div>
+    <p class="description">
+      نُقدّم تفسيرًا شرعيًا موثوقًا للأحلام والرؤى، وفق منهج أهل السنة والجماعة.  
+      <ul>
+        <li>🔹 رؤيا واحدة: <strong>30 ريال سعودي</strong></li>
+        <li>🔸 اشتراك شهري: <strong>100 ريال سعودي</strong></li>
+        <li>🔹 رؤيا مجانية بشرط نشر حساب تويتر الخاص بنا</li>
+      </ul>
+      يتم الرد خلال <strong>24 ساعة</strong>.  
+      للتواصل: <strong>+966507286134</strong>  
+      | <a href="https://x.com/AboLith1152379" target="_blank">@AboLith1152379</a>
+    </p>
 
-  <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#interpret">طلب تفسير</a>
-    <a href="#about">من أنا</a>
-    <a href="#contact">تواصل</a>
-  </nav>
+    <!-- نموذج الإرسال إلى البريد -->
+    <form action="https://formsubmit.co/abolith966@gmail.com" method="POST">
+      <textarea name="الرؤيا" placeholder="اكتب الرؤيا هنا بالتفصيل" required></textarea>
 
-  <section id="home">
-    <h2>مرحبًا بكم</h2>
-    <p>أرسل حلمك لتفسيره وفق المنهج الشرعي برسوم رمزية. تفسير مجاني لمن ينشر حساب تويتر الخاص بي.</p>
-  </section>
+      <label>الخدمة المطلوبة:</label>
+      <div class="options">
+        <label><input type="checkbox" name="الخدمة" value="رؤيا واحدة بـ30 ريال" /> رؤيا واحدة بـ 30 ريال سعودي</label>
+        <label><input type="checkbox" name="الخدمة" value="اشتراك شهري بـ100 ريال" /> اشتراك شهري بـ 100 ريال</label>
+        <label><input type="checkbox" name="الخدمة" value="رؤيا مجانية بشرط النشر" /> رؤيا مجانية بشرط نشر حساب تويتر</label>
+      </div>
 
-  <section id="interpret">
-    <h2>طلب تفسير رؤيا</h2>
-    <form id="dreamForm" onsubmit="sendToWhatsApp(); return false;">
-      <label>الاسم:</label><br>
-      <input type="text" id="name" required><br><br>
+      <textarea name="ملاحظات إضافية" placeholder="ملاحظات أخرى (اختياري)"></textarea>
+      <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني" required />
 
-      <label>العمر:</label><br>
-      <input type="number" id="age" required><br><br>
+      <!-- حقل إخفاء لمنع السبام -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://abu-laith.github.io/thanks.html">
 
-      <label>الحالة النفسية والاجتماعية:</label><br>
-      <input type="text" id="state" required><br><br>
-
-      <label>نص الرؤيا:</label><br>
-      <textarea id="dream" rows="5" required></textarea><br><br>
-
-      <label>نوع الخدمة:</label><br>
-      <select id="service" required>
-        <option value="تفسير رؤيا (30 ريال)">تفسير رؤيا (30 ريال)</option>
-        <option value="اشتراك شهري (100 ريال)">اشتراك شهري (100 ريال)</option>
-        <option value="مجاني بنشر تويتر">تفسير مجاني بنشر حساب تويتر</option>
-      </select><br><br>
-
-      <button type="submit">أرسل عبر واتساب</button>
+      <button type="submit">إرسال</button>
     </form>
   </section>
-
-  <section id="about">
-    <h2>من أنا</h2>
-    <p>أنا الشيخ أبو ليث، مفسر معتمد للرؤى منذ سنوات، أعمل وفق منهج أهل السنة والجماعة.</p>
-  </section>
-
-  <section id="contact">
-    <h2>تواصل معنا</h2>
-    <p>📞 رقم التواصل: <strong>+966507286134</strong></p>
-    <p>🐦 تويتر: <a href="https://x.com/AboLith1152379" target="_blank">@AboLith1152379</a></p>
-    <p>📩 عبر الواتساب مباشرة: <a href="https://wa.me/966507286134" target="_blank">اضغط هنا</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 الشيخ أبو ليث | جميع الحقوق محفوظة
-  </footer>
-
-  <script>
-    function toggleLanguage() {
-      const elements = document.querySelectorAll('.ar, .en, #title-ar, #title-en, #subtitle-ar, #subtitle-en');
-      elements.forEach(el => {
-        el.classList.toggle('en');
-        el.classList.toggle('ar');
-      });
-    }
-
-    function sendToWhatsApp() {
-      const name = document.getElementById("name").value;
-      const age = document.getElementById("age").value;
-      const state = document.getElementById("state").value;
-      const dream = document.getElementById("dream").value;
-      const service = document.getElementById("service").value;
-
-      const message = `طلب تفسير رؤيا:\nالاسم: ${name}\nالعمر: ${age}\nالحالة: ${state}\nالخدمة المطلوبة: ${service}\nالرؤيا:\n${dream}`;
-      const encodedMessage = encodeURIComponent(message);
-
-      window.open(`https://wa.me/966507286134?text=${encodedMessage}`, '_blank');
-    }
-  </script>
 </body>
 </html>
